@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bmi.name %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @bmi.height %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @bmi.weight %>
+</p>
+
+
+<%= link_to 'Edit', edit_bmi_path(@bmi) %> |
+<%= link_to 'Back', bmis_path %>

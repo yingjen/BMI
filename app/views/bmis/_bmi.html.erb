@@ -1,0 +1,11 @@
+<tr>
+    <td><%= bmi.name %></td>
+    <td><%= bmi.height %></td>
+    <td><%= bmi.weight %></td>
+    <td>
+    	  <i><%= (bmi.weight/(bmi.height * bmi.height)).round(2) %></i>
+    </td>
+    <td><%= link_to 'Show', bmi %></td>
+    <td><%= link_to 'Edit', edit_bmi_path(bmi) %></td>
+    <td><%= link_to 'Destroy', bmi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>
